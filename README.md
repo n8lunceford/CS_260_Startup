@@ -5,6 +5,8 @@ The startup project is an opportunity to create something that can be of great b
 Calendars, when designed properly, can be of great use. They can assist users in keeping events organized. With this tool, it's relatively harder to be late for things. However, not all calendars have the features I look for, such as distinct colors for specific types of events, and the ability to see the schedule for more than one day of the week.
 
 The purpose of this calendar is to provide a diverse amount of event types, such that custom checklists can be created and associated with events. For example, for a class, events like homework and papers may be put onto a checklist. Even more general, maybe a grocery list for the week can be put together. For dating, checklists can be made as a roadmap to a potential relationship.
+
+![Example UI](260_startup_image.png)
 ## The Inspiration
 I think it's safe to say that the inspiration is obvious: the Preach My Gospel application.
 
