@@ -24,3 +24,10 @@ Lists are fixed in the Preach My Gospel app, because missionaries are required t
 * **Service** - Endpoints such as creating, changing or deleting events and lists.
 * **Database** - A database will store users and actions. User data will be secure, and actions will not be saved without proper authentication.
 * **WebSocket** - The actions of a user will update in real time in all of their open sessions.
+## HTML Startup
+I created 5 different HTML files, each representing a page.
+* **index.html** - This page contains the login/create account section, which information will be stored in the database.
+* **calendar.html** - This page contains the first great interface that represents an interface for September, using buttons for each day. Above the calendar is a representation of WebSocket usage, notifying what users are doing in real-time.
+* **agenda.html** - This page is very similar to calendar.html, but in place of a calendar is a view of a particular week, with a placeholder for interactivity for each hour within each day.
+* **lists.html** - This is a placeholder for the UI to be implemented for lists that the user will create.
+* **about.html** - This page contains an image, and a placeholder for scriptures pulled from the Church API.
