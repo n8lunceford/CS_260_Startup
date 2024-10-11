@@ -38,4 +38,5 @@ I created 5 different CSS files, each accompanying an HTML file and improving ae
 * **agenda.css** - This file makes the agenda page look cleaner, with markings for each hour of the first half of the days of the week.
 * **lists.css** - This file makes the lists page look cleaner, with an accordion implementation for each list.
 * **about.css** - This file makes the about page look cleaner.
+
 For each page, the sizing was fixed so that the center would be maintained.
