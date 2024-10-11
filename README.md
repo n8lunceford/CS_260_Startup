@@ -31,3 +31,11 @@ I created 5 different HTML files, each representing a page.
 * **agenda.html** - This page is very similar to calendar.html, but in place of a calendar is a view of a particular week, with a placeholder for interactivity for each hour within each day.
 * **lists.html** - This is a placeholder for the UI to be implemented for lists that the user will create.
 * **about.html** - This page contains an image, and a placeholder for scriptures pulled from the Church API.
+## CSS Startup
+I created 5 different CSS files, each accompanying an HTML file and improving aesthetics.
+* **index.css** - This file makes the login page look cleaner.
+* **calendar.css** - This file makes the calendar page look cleaner, evenly dividing the days of the month.
+* **agenda.css** - This file makes the agenda page look cleaner, with markings for each hour of the first half of the days of the week.
+* **lists.css** - This file makes the lists page look cleaner, with an accordion implementation for each list.
+* **about.css** - This file makes the about page look cleaner.
+For each page, the sizing was fixed so that the center would be maintained.
