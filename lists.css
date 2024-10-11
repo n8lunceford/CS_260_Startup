@@ -1,0 +1,144 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header section styling */
+  header {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  header nav menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  header nav menu li {
+    margin: 0 15px;
+  }
+  
+  header nav menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  /* Main section styling */
+  main {
+    padding: 40px;
+    text-align: left;
+  }
+  
+  main h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #003366;
+  }
+  
+  /* Accordion button styling */
+  .accordion {
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+  .accordion:hover {
+    background-color: #0059b3;
+  }
+  
+  .accordion:after {
+    content: '\002B'; /* Add "+" symbol for closed accordion */
+    font-size: 1.2rem;
+    float: right;
+  }
+  
+  .accordion.active:after {
+    content: '\2212'; /* Add "-" symbol for opened accordion */
+  }
+  
+  /* Panel (hidden content) styling */
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .panel ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .panel ul li {
+    padding: 8px 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .panel ul li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Footer section styling */
+  footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer hr {
+    border: 0;
+    height: 1px;
+    background: #bbb;
+    margin: 10px auto;
+    width: 80%;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    header nav menu li {
+      margin: 0 10px;
+    }
+  
+    .accordion {
+      font-size: 1rem;
+    }
+  }
+  
