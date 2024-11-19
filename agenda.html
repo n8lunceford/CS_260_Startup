@@ -1,155 +1,25 @@
+<!-- agenda.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lance Agenda</title>
-    <link rel="stylesheet" href="agenda.css" />
-    <link rel="icon" href="favicon.ico" />
-  </head>
-  <body>
-    <header>
-      <h1>Lance Agenda<sup>&reg;</sup></h1>
-      <nav>
-        <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="calendar.html">Calendar</a></li>
-          <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="lists.html">Lists</a></li>
-          <li><a href="about.html">About</a></li>
-        </menu>
-      </nav>
-      <hr />
-    </header>
-
-    <main>
-      <div class="calendar-grid">
-        <!-- Time and Days Headers -->
-        <div class="time-header"></div> <!-- Empty top-left corner -->
-        <div class="day-header">Monday</div>
-        <div class="day-header">Tuesday</div>
-        <div class="day-header">Wednesday</div>
-        <div class="day-header">Thursday</div>
-        <div class="day-header">Friday</div>
-        <div class="day-header">Saturday</div>
-        <div class="day-header">Sunday</div>
-
-        <!-- Hourly blocks from 1 AM to 5 AM -->
-        <div class="time-label">12:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="1:00"></div>
-        
-        <div class="time-label">1:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="1:00"></div>
-
-        <div class="time-label">2:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="2:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="2:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="2:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="2:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="2:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="2:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="2:00"></div>
-
-        <div class="time-label">3:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="3:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="3:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="3:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="3:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="3:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="3:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="3:00"></div>
-
-        <div class="time-label">4:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="4:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="4:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="4:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="4:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="4:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="4:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="4:00"></div>
-
-        <div class="time-label">5:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="5:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="5:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="5:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="5:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="5:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="5:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="5:00"></div>
-        
-        <div class="time-label">6:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="1:00"></div>
-        
-        <div class="time-label">7:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="1:00"></div>
-        
-        <div class="time-label">8:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="1:00"></div>
-        
-        <div class="time-label">9:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="1:00"></div>
-        
-        <div class="time-label">10:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="1:00"></div>
-        
-        <div class="time-label">11:00 AM</div>
-        <div class="calendar-cell" data-day="monday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="tuesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="wednesday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="thursday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="friday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="saturday" data-time="1:00"></div>
-        <div class="calendar-cell" data-day="sunday" data-time="1:00"></div>
-      </div>
-    </main>
-
-    <footer>
-      <hr />
-      <span class="text-reset">Author Name</span><br />
-      <a>Nathan (Lance) Lunceford</a><br />
-      <a href="https://github.com/n8lunceford/CS_260_Startup/tree/main">GitHub</a>
-    </footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="lists.html">Lists</a></li>
+        </ul>
+    </nav>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="Agenda.jsx"></script>
+</body>
 </html>
