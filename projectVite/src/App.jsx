@@ -22,9 +22,12 @@ function App() {
       <div className = 'app'>
 
 
-      <header className='container-fluid'>
-          <nav className='navbar fixed-top navbar-dark'>
-            <menu className='navbar-nav'>
+      <header>
+        
+          <nav>
+            
+            <menu>
+            
       
 
 
