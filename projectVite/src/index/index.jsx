@@ -1,5 +1,8 @@
 // Index.jsx
-const Index = () => {
+import React from 'react';
+import './index.css';
+
+export const Index = () => {
     return (
       <div>
         <h1>Welcome</h1>
@@ -11,4 +14,4 @@ const Index = () => {
     );
   };
   
-  ReactDOM.render(<Index />, document.getElementById('root'));
+  // ReactDOM.render(<Index />, document.getElementById('root'));

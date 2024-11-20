@@ -1,5 +1,8 @@
 // Lists.jsx
-const Lists = () => {
+import React from 'react';
+import './lists.css';
+
+export const Lists = () => {
     const assignments = [
       'Math HW 4',
       'Writing 316 Reading CH 7',
@@ -38,4 +41,4 @@ const Lists = () => {
     );
   };
   
-  ReactDOM.render(<Lists />, document.getElementById('root'));
+  //ReactDOM.render(<Lists />, document.getElementById('root'));

@@ -1,5 +1,8 @@
 // Calendar.jsx
-const Calendar = () => {
+import React from 'react';
+import './calendar.css';
+
+export const Calendar = () => {
     const days = Array.from({length: 31}, (_, i) => i + 1);
   
     return (
@@ -32,4 +35,4 @@ const Calendar = () => {
     );
   };
   
-  ReactDOM.render(<Calendar />, document.getElementById('root'));
+  // ReactDOM.render(<Calendar />, document.getElementById('root'));

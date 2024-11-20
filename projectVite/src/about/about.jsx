@@ -1,4 +1,7 @@
-function About() {
+import React from 'react';
+import './about.css';
+
+export function About() {
     return (
         <div>
             <h1>About Our Project</h1>
@@ -20,4 +23,4 @@ function About() {
     );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//ReactDOM.render(<App />, document.getElementById('root'));

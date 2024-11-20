@@ -1,5 +1,8 @@
 // Agenda.jsx
-const Agenda = () => {
+import React from 'react';
+import './agenda.css';
+
+export const Agenda = () => {
     const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
     const hours = ['12:00 AM', '1:00 AM', '2:00 AM', '3:00 AM', '4:00 AM', '5:00 AM', '6:00 AM', '7:00 AM', '8:00 AM', '9:00 AM', '10:00 AM', '11:00 AM'];
   
@@ -26,4 +29,4 @@ const Agenda = () => {
     );
   };
   
-  ReactDOM.render(<Agenda />, document.getElementById('root'));
+  //ReactDOM.render(<Agenda />, document.getElementById('root'));
