@@ -1,51 +1,16 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lance Agenda HTML</title>
-    <link rel="icon" href="favicon.ico" />
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Lance Agenda<sup>&reg;</sup></h1>
-      <nav>
-        <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="calendar.html">Calendar</a></li>
-          <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="lists.html">Lists</a></li>
-          <li><a href="about.html">About</a></li>
-        </menu>
-      </nav>
-      <hr />
-    </header>
-
-    <main>
-      <h1>Welcome</h1>
-      <form method="get" action="play.html">
-        <div>
-          <span>@</span>
-          <input type="text" placeholder="your@email.com" />
-        </div>
-        <div>
-          <span>🔒</span>
-          <input type="password" placeholder="password" />
-        </div>
-        <button type="submit">Login</button>
-        <button type="submit">Create Account</button>
-      </form>
-    </main>
-
-    <footer>
-      <hr />
-      <span>Author Name</span>
-      <br />
-      <a>Nathan (Lance) Lunceford</a>
-      <br />
-      <a href="https://github.com/n8lunceford/CS_260_Startup/tree/main">GitHub</a>
-    </footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="index.jsx"></script>
+</body>
 </html>

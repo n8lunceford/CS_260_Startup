@@ -1,72 +1,16 @@
+<!-- lists.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lance Agenda HTML</title>
-    <link rel="icon" href="favicon.ico" />
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="lists.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Lance Agenda<sup>&reg;</sup></h1>
-      <nav>
-        <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="calendar.html">Calendar</a></li>
-          <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="lists.html">Lists</a></li>
-          <li><a href="about.html">About</a></li>
-        </menu>
-      </nav>
-      <hr />
-    </header>
-
-    <main>
-      <h1>Lists</h1>
-
-      <!-- Assignments accordion -->
-      <button class="accordion">Assignments</button>
-      <div class="panel">
-        <ul class="item">
-          <li class="player-name">Math HW 4</li>
-          <li class="player-name">Writing 316 Reading CH 7</li>
-          <li class="player-name">CS 224 Project 2</li>
-        </ul>
-      </div>
-
-      <!-- Dates accordion -->
-      <button class="accordion">Dates</button>
-      <div class="panel">
-        <ul class="item">
-          <li class="player-name">Ask out</li>
-          <li class="player-name">Second date</li>
-          <li class="player-name">Where</li>
-        </ul>
-      </div>
-
-      <!-- Proxy Ordinances accordion -->
-      <button class="accordion">Proxy Ordinances</button>
-      <div class="panel">
-        <ul class="item">
-          <li class="player-name">Endowment</li>
-          <li class="player-name">Sealing</li>
-          <li class="player-name">Initiatory</li>
-        </ul>
-      </div>
-    </main>
-
-    <footer>
-      <hr />
-      <span class="text-reset">Author Name</span>
-      <br />
-      <a>Nathan (Lance) Lunceford</a>
-      <br />
-      <a href="https://github.com/n8lunceford/CS_260_Startup/tree/main">GitHub</a>
-    </footer>
-
-    <!-- Link to external JavaScript -->
-    <script src="scripts.js"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="lists.jsx"></script>
+</body>
 </html>
