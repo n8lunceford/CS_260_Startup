@@ -1,19 +1,23 @@
-import React from 'react';
-import './about.css';
-
-export function About(props) {
-  const [imageUrl, setImageUrl] = React.useState('data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=');
-  const [quote, setQuote] = React.useState('Loading...');
-  const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
-
-  // We only want this to render the first time the component is created and so we provide an empty dependency list.
-  React.useEffect(() => {
-    setImageUrl(`placeholder.jpg`);
-    setQuote('Show me the code');
-    setQuoteAuthor('Linus Torvalds');
-  }, []);
-
-  return (
-    
-  );
+function About() {
+    return (
+        <div>
+            <h1>About Our Project</h1>
+            <section>
+                <h2>Description</h2>
+                <p>Description of your project</p>
+                <p>More description of your project</p>
+            </section>
+            <section>
+                <h2>Inspirational Quote</h2>
+                <blockquote>
+                    "And now, O my son, ye are called of God to preach the word unto this people. 
+                    And now, my son, go thy way, declare the word with truth and soberness, that 
+                    thou mayest bring souls unto repentance, that the great plan of mercy may have 
+                    claim upon them. And may God grant unto you even according to my words. Amen."
+                </blockquote>
+            </section>
+        </div>
+    );
 }
+
+ReactDOM.render(<App />, document.getElementById('root'));
