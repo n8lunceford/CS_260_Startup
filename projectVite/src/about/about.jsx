@@ -2,6 +2,20 @@ import React from 'react';
 import './about.css';
 
 export function About() {
+
+    function logout() {
+        fetch(`/api/auth/logout`, {
+          method: 'delete',
+        })
+          .catch(() => {
+            // Logout failed. Assuming offline
+          })
+          .finally(() => {
+            localStorage.removeItem('userName');
+            props.onLogout();
+          });
+      }
+
     return (
         <div>
             <h1>About Our Project</h1>
@@ -19,6 +33,7 @@ export function About() {
                     claim upon them. And may God grant unto you even according to my words. Amen."
                 </blockquote>
             </section>
+            <a href="#" onClick={() => logout()}>🔒 Logout</a>
         </div>
     );
 }
