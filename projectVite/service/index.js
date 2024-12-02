@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+let users = {};
+const uuid = require(`uuid`);
 
 const port = process.argv.length > 2 ? process.argv[2] : 4000;
 
