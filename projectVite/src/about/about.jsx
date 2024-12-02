@@ -3,6 +3,20 @@ import './about.css';
 
 export function About() {
 
+    const [quote, setQuote] = React.useState('Loading...');
+    const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
+
+    React.useEffect(() => {
+    
+        fetch('https://quote.cs260.click')
+          .then((response) => response.json())
+          .then((data) => {
+            setQuote(data.quote);
+            setQuoteAuthor(data.author);
+          })
+          .catch();
+      }, []);
+
     function logout() {
         fetch(`/api/auth/logout`, {
           method: 'delete',
