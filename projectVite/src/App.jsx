@@ -54,7 +54,14 @@ function App() {
     </header>
 
     <Routes>
-          <Route path='/' element={<Index />} exact />
+          <Route path='/' element={<Index
+          //userName={userName}
+          //authState={authState}
+          //onAuthChange={(userName, authState) => {
+            //setAuthState(authState);
+            //setUserName(userName);
+          //}}
+          />} exact />
           <Route path='/about' element={<About />} />
           <Route path='/agenda' element={<Agenda />} />
           <Route path='/calendar' element={<Calendar />} />
@@ -75,4 +82,4 @@ function NotFound() {
   return <main className='container-fluid bg-secondary text-center'>404: Return to sender. Address unknown.</main>;
 }
 
-export default App
+export default App;

@@ -1,7 +1,8 @@
 import React from 'react';
 import './about.css';
+import Button from 'react-bootstrap/Button';
 
-export function About() {
+export function About(props) {
 
     const [quote, setQuote] = React.useState('Loading...');
     const [quoteAuthor, setQuoteAuthor] = React.useState('unknown');
@@ -47,7 +48,7 @@ export function About() {
                     claim upon them. And may God grant unto you even according to my words. Amen."
                 </blockquote>
             </section>
-            <a href="#" onClick={() => logout()}>🔒 Logout</a>
+            <Button href="#" onClick={() => logout()}>🔒 Logout</Button>
         </div>
     );
 }

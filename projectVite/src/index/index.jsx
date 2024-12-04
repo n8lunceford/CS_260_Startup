@@ -1,8 +1,23 @@
 // Index.jsx
 import React from 'react';
 import './index.css';
+import Button from 'react-bootstrap/Button';
+import './authState.js';
 
-export const Index = () => {
+export function Index (props) {
+  const [userName, setUserName] = React.useState(props.userName);
+  const [password, setPassword] = React.useState('');
+
+
+  async function login() {
+    loginOrCreate('/api/auth/login');
+  }
+
+  async function create() {
+    loginOrCreate('/api/auth/create');
+  }
+
+
 
   async function loginOrCreate(endpoint) {
     const response = await fetch(endpoint, {
@@ -14,7 +29,8 @@ export const Index = () => {
     });
     if (response?.status === 200) {
       localStorage.setItem('userName', userName);
-      props.onLogin(userName);
+      //props.onLogin(userName);
+      //props.setAuthState(authState.authenticated);
     } else {
       const body = await response.json();
       setDisplayError(`⚠ Error: ${body.msg}`);
@@ -28,16 +44,16 @@ export const Index = () => {
           
         <div>
           <span>@</span>
-          <input type="text" placeholder="your@email.com" />
+          <input type="text" placeholder="your@email.com" onChange={(e) => setUserName(e.target.value)} />
         </div>
         <div>
           <span>🔒</span>
-          <input type="password" placeholder="password" />
+          <input type="password" placeholder="password" onChange={(e) => setPassword(e.target.value)} />
         </div>
 
-          <a href="#" onClick={() => loginOrCreate('/api/auth/login')}>🔒 Login</a>
-          <a href="#"onClick={() => loginOrCreate('/api/auth/create')}>Create Account</a>
-          <a href="https://github.com/n8lunceford/CS_260_Startup/tree/main">GitHub</a>
+          <Button href="#" onClick={() => login()}>🔒 Login</Button>
+          <Button href="#"onClick={() => create()}>Create Account</Button>
+          <Button href="https://github.com/n8lunceford/CS_260_Startup/tree/main">GitHub</Button>
         </nav>
       </div>
     );

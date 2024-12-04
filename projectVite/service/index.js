@@ -1,12 +1,22 @@
 const express = require('express');
 const app = express();
 let users = {};
-const uuid = require(`uuid`);
+const uuid = require('uuid');
+app.use(express.json());
 
-const port = process.argv.length > 2 ? process.argv[2] : 4000;
 
-app.get('*', (_req, res) => {
-  res.send({ msg: 'Startup service' });
+var apiRouter = express.Router();
+app.use('/api', apiRouter);
+app.use(express.static('public'));
+
+const port = process.argv.length > 2 ? process.argv[2] : 4001;
+
+// app.get('*', (_req, res) => {
+//   res.send({ msg: 'Startup service' });
+// });
+
+app.use((_req, res) => {
+    res.sendFile('index.html', { root: 'public' });
 });
 
 app.listen(port, () => {
