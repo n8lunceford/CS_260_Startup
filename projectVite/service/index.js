@@ -9,7 +9,7 @@ var apiRouter = express.Router();
 app.use('/api', apiRouter);
 app.use(express.static('public'));
 
-const port = process.argv.length > 2 ? process.argv[2] : 4001;
+const port = process.argv.length > 2 ? process.argv[2] : 4002;
 
 // app.get('*', (_req, res) => {
 //   res.send({ msg: 'Startup service' });

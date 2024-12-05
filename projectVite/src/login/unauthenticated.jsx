@@ -2,12 +2,13 @@
 import React from 'react';
 import './index.css';
 import Button from 'react-bootstrap/Button';
+import {MessageDialog} from './messageDialog'
 import './authState.js';
 
-export function Index (props) {
+export function Unauthenticated(props) {
   const [userName, setUserName] = React.useState(props.userName);
   const [password, setPassword] = React.useState('');
-
+  const [displayError, setDisplayError] = React.useState(null);
 
   async function login() {
     loginOrCreate('/api/auth/login');
@@ -29,7 +30,7 @@ export function Index (props) {
     });
     if (response?.status === 200) {
       localStorage.setItem('userName', userName);
-      //props.onLogin(userName);
+      props.onLogin(userName);
       //props.setAuthState(authState.authenticated);
     } else {
       const body = await response.json();
@@ -38,6 +39,7 @@ export function Index (props) {
   }
 
     return (
+      <>
       <div>
         <h1>Welcome</h1>
         <nav>
@@ -56,6 +58,8 @@ export function Index (props) {
           <Button href="https://github.com/n8lunceford/CS_260_Startup/tree/main">GitHub</Button>
         </nav>
       </div>
+      <MessageDialog message = {displayError} onHide = {() => setDisplayError(null)}/>
+      </>
     );
   };
   

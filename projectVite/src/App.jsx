@@ -6,14 +6,17 @@ import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { About } from './about/about';
 import { Agenda } from './agenda/agenda';
 import { Calendar } from './calendar/calendar';
-import { Index } from './index/index';
+import { Login } from './login/login';
 import { Lists } from './lists/lists';
+import {AuthState} from './login/authState';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [count, setCount] = useState(0);
-  
+  const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
+  const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
+  const [authState, setAuthState] = React.useState(currentAuthState);
 
   return (
     
@@ -54,13 +57,13 @@ function App() {
     </header>
 
     <Routes>
-          <Route path='/' element={<Index
-          //userName={userName}
-          //authState={authState}
-          //onAuthChange={(userName, authState) => {
-            //setAuthState(authState);
-            //setUserName(userName);
-          //}}
+          <Route path='/' element={<Login
+          userName={userName}
+          authState={authState}
+          onAuthChange={(userName, authState) => {
+            setAuthState(authState);
+            setUserName(userName);
+          }}
           />} exact />
           <Route path='/about' element={<About />} />
           <Route path='/agenda' element={<Agenda />} />
