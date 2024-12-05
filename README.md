@@ -43,3 +43,4 @@ For each page, the sizing was fixed so that the center would be maintained.
 ## React Startup
 I created 5 new jsx files to accompany the html files of each page, along with a new jsx and css file called App. I placed these files with their respective css files inside a folder called projectVite, so I could simulate what the webpage would look like upon deployment. App.jsx dictates the navbar, and each jsx file allows the project to operate as a react project.
 ## Service Startup
+I implemented endpoints for login, create, logout, and third party api. I created unauthenticated.jsx and authenticated.jsx to replace the page for index.jsx for the login/logout pages respectively, using functions that take the intended paths as parameters so that users can be successfully created.
