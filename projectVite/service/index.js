@@ -3,6 +3,7 @@ const app = express();
 let users = {};
 const uuid = require('uuid');
 app.use(express.json());
+const DB = require('database.js');
 
 
 var apiRouter = express.Router();
@@ -33,7 +34,7 @@ apiRouter.post('/auth/create', async (req, res) => {
     } else {
       const user = { email: req.body.email, password: req.body.password, token: uuid.v4() };
       users[user.email] = user;
-  
+        DB.createUser(email, password);
       res.send({ token: user.token });
     }
   });
