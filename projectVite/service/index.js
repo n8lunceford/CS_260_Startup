@@ -3,7 +3,7 @@ const app = express();
 // let users = {};
 // const uuid = require('uuid');
 app.use(express.json());
-const DB = require('database.js');
+const DB = require('./database.js');
 
 
 
